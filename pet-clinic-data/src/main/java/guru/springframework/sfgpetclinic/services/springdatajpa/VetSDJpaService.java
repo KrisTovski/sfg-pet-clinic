@@ -23,7 +23,6 @@ public class VetSDJpaService implements VetService {
     public Set<Vet> findAll() {
         Set<Vet> vets = new HashSet<>();
         vetRepository.findAll().forEach(vets::add);
-
         return vets;
     }
 
